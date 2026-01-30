@@ -1,0 +1,60 @@
+/* Page background and centering */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;            /* light gray like the screenshot */
+  font-family: Arial, sans-serif;  /* simple sans-serif */
+}
+
+/* Fixed 4×4 grid with square tiles and 5px gaps */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-auto-rows: 100px;
+  gap: 5px;
+}
+
+/* Tile look: black border, left-aligned two lines of text */
+.tile {
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 6px 8px;     /* text offset from top-left, like the screenshot */
+}
+
+/* Text lines */
+.name { display: block; line-height: 1.05; }
+.hex  { display: block; line-height: 1.05; }
+
+/* Text colors for contrast */
+.text-black { color: #000; }
+.text-white { color: #fff; }
+
+/* Background colors (exact values) */
+.silver  { background-color: #C0C0C0; }
+.gray    { background-color: #808080; }
+.maroon  { background-color: #800000; }
+.green   { background-color: #008000; }
+.white   { background-color: #FFFFFF; }
+.black   { background-color: #000000; }
+.red     { background-color: #FF0000; }
+.lime    { background-color: #00FF00; }
+.navy    { background-color: #000080; }
+.purple  { background-color: #800080; }
+.olive   { background-color: #808000; }
+.teal    { background-color: #008080; }
+.blue    { background-color: #0000FF; }
+.magenta { background-color: #FF00FF; }
+.yellow  { background-color: #FFFF00; }
+.cyan    { background-color: #00FFFF; }
+.lime    { background-color: #00ff00; }
+.navy    { background-color: #000080; }
+.purple  { background-color: #800080; }
+.olive   { background-color: #808000; }
+.teal    { background-color: #008080; }
+.blue    { background-color: #0000ff; }
+.magenta { background-color: #ff00ff; }
+.yellow  { background-color: #ffff00; }
+.cyan    { background-color: #00ffff; }
